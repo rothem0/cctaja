@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-dodum: 'Gowun Dodum', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Retro Wood & Hanji paper texture subtle patterns */
+.bg-hanji {
+  background-color: #faf7f2;
+  background-image: radial-gradient(#e7ded0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-retro-green {
+  background-color: #0d3826;
+  background-image: radial-gradient(#154a33 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Gentle key press animations */
+@keyframes popIn {
+  0% { transform: scale(0.92); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop {
+  animation: popIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f0e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4cbba;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a995;
+}

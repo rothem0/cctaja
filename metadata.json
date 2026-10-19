@@ -1,0 +1,7 @@
+{
+  "name": "청춘타자 - 어르신 단어소환 두뇌활력 타자교실",
+  "description": "치매 예방 및 단어 소환력 증진을 위한 한메타자 스타일의 시니어 맞춤형 두뇌 활력 타자 게임",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
